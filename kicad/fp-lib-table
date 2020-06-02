@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name printplaat)(type KiCad)(uri ${KIPRJMOD}/printplaat.pretty)(options "")(descr ""))
+  (lib (name dfplayer_mini)(type KiCad)(uri ${KIPRJMOD}/dfplayer_mini.pretty)(options "")(descr ""))
+)

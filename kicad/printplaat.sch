@@ -1,0 +1,328 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:CP CP1
+U 1 1 5DC6F823
+P 2300 2550
+F 0 "CP1" H 2418 2596 50  0000 L CNN
+F 1 "10uF" H 2418 2505 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 2338 2400 50  0001 C CNN
+F 3 "~" H 2300 2550 50  0001 C CNN
+	1    2300 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3800 2600 4050
+$Comp
+L power:VCC #PWR05
+U 1 1 5DD18610
+P 2600 3800
+F 0 "#PWR05" H 2600 3650 50  0001 C CNN
+F 1 "VCC" H 2617 3973 50  0000 C CNN
+F 2 "" H 2600 3800 50  0001 C CNN
+F 3 "" H 2600 3800 50  0001 C CNN
+	1    2600 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 4050 2600 4050
+Text GLabel 4200 4050 2    50   Input ~ 0
+BUSY
+$Comp
+L Device:R R1
+U 1 1 5DD219B6
+P 2350 4150
+F 0 "R1" V 2150 4150 50  0000 C CNN
+F 1 "2K7" V 2250 4150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2280 4150 50  0001 C CNN
+F 3 "~" H 2350 4150 50  0001 C CNN
+	1    2350 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 4150 2750 4150
+Text GLabel 1950 4150 0    50   Input ~ 0
+TX
+Wire Wire Line
+	1950 4150 2200 4150
+Text GLabel 1950 4250 0    50   Input ~ 0
+RX
+Text GLabel 2000 4750 0    50   Input ~ 0
+PHONE
+Wire Wire Line
+	2750 4750 2500 4750
+NoConn ~ 3700 4350
+NoConn ~ 3700 4450
+NoConn ~ 3700 4550
+NoConn ~ 3700 4750
+NoConn ~ 2750 4350
+NoConn ~ 2750 4450
+NoConn ~ 2750 4550
+$Comp
+L power:GND #PWR01
+U 1 1 5DD406CB
+P 1450 4750
+F 0 "#PWR01" H 1450 4500 50  0001 C CNN
+F 1 "GND" H 1455 4577 50  0000 C CNN
+F 2 "" H 1450 4750 50  0001 C CNN
+F 3 "" H 1450 4750 50  0001 C CNN
+	1    1450 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 4650 1450 4650
+Wire Wire Line
+	1450 4650 1450 4750
+$Comp
+L Connector:USB_B J1
+U 1 1 5DD432DF
+P 1400 2200
+F 0 "J1" H 1457 2667 50  0000 C CNN
+F 1 "USB_B" H 1457 2576 50  0000 C CNN
+F 2 "Connector_USB:USB_B_OST_USB-B1HSxx_Horizontal" H 1550 2150 50  0001 C CNN
+F 3 " ~" H 1550 2150 50  0001 C CNN
+	1    1400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR04
+U 1 1 5DD4571C
+P 2300 1650
+F 0 "#PWR04" H 2300 1500 50  0001 C CNN
+F 1 "VCC" H 2317 1823 50  0000 C CNN
+F 2 "" H 2300 1650 50  0001 C CNN
+F 3 "" H 2300 1650 50  0001 C CNN
+	1    2300 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1650 2300 2000
+$Comp
+L power:GND #PWR02
+U 1 1 5DD46B08
+P 1400 3000
+F 0 "#PWR02" H 1400 2750 50  0001 C CNN
+F 1 "GND" H 1405 2827 50  0000 C CNN
+F 2 "" H 1400 3000 50  0001 C CNN
+F 3 "" H 1400 3000 50  0001 C CNN
+	1    1400 3000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1300 2600
+Wire Wire Line
+	2300 2400 2300 2000
+Connection ~ 2300 2000
+Wire Wire Line
+	2300 2700 2300 2850
+$Comp
+L dfplayer_mini:DFPlayerMini U1
+U 1 1 5DD6E270
+P 3250 4400
+F 0 "U1" H 3225 5015 50  0000 C CNN
+F 1 "DFPlayerMini" H 3225 4924 50  0000 C CNN
+F 2 "printplaat:DFPlayer_Mini" H 3300 4250 50  0001 C CNN
+F 3 "" H 3300 4250 50  0001 C CNN
+	1    3250 4400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5600 1650
+NoConn ~ 5600 2150
+Wire Wire Line
+	5600 2050 5500 2050
+Text GLabel 5500 2050 0    50   Input ~ 0
+RX
+Wire Wire Line
+	5600 1950 5500 1950
+Text GLabel 5500 1950 0    50   Input ~ 0
+TX
+Text GLabel 5500 1750 0    50   Input ~ 0
+BUSY
+Text GLabel 4250 1850 0    50   Input ~ 0
+PHONE
+$Comp
+L power:VCC #PWR07
+U 1 1 5DCEC56A
+P 6200 1100
+F 0 "#PWR07" H 6200 950 50  0001 C CNN
+F 1 "VCC" H 6217 1273 50  0000 C CNN
+F 2 "" H 6200 1100 50  0001 C CNN
+F 3 "" H 6200 1100 50  0001 C CNN
+	1    6200 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5DCEB1C6
+P 6200 2800
+F 0 "#PWR08" H 6200 2550 50  0001 C CNN
+F 1 "GND" H 6205 2627 50  0000 C CNN
+F 2 "" H 6200 2800 50  0001 C CNN
+F 3 "" H 6200 2800 50  0001 C CNN
+	1    6200 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2550 6200 2800
+Wire Wire Line
+	6200 1100 6200 1350
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85-20PU U2
+U 1 1 5DCB4EBE
+P 6200 1950
+F 0 "U2" H 5670 1996 50  0000 R CNN
+F 1 "ATtiny85-20PU" H 5670 1905 50  0000 R CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 6200 1950 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 6200 1950 50  0001 C CNN
+	1    6200 1950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4750 2100 4750
+Wire Wire Line
+	2100 5550 2100 5650
+Wire Wire Line
+	2000 5550 2100 5550
+$Comp
+L power:GND #PWR03
+U 1 1 5DD5D420
+P 2100 5650
+F 0 "#PWR03" H 2100 5400 50  0001 C CNN
+F 1 "GND" H 2105 5477 50  0000 C CNN
+F 2 "" H 2100 5650 50  0001 C CNN
+F 3 "" H 2100 5650 50  0001 C CNN
+	1    2100 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 5450 2100 5450
+$Comp
+L Device:Speaker LS1
+U 1 1 5DD56433
+P 1800 5550
+F 0 "LS1" H 1763 5133 50  0000 C CNN
+F 1 "Phone" H 1763 5224 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical" H 1800 5350 50  0001 C CNN
+F 3 "~" H 1790 5500 50  0001 C CNN
+	1    1800 5550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5DC8D614
+P 2350 4750
+F 0 "R3" V 2550 4750 50  0000 C CNN
+F 1 "220R" V 2450 4750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2280 4750 50  0001 C CNN
+F 3 "~" H 2350 4750 50  0001 C CNN
+	1    2350 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 2250 4900 2500
+$Comp
+L power:GND #PWR06
+U 1 1 5DCEA80C
+P 4900 2500
+F 0 "#PWR06" H 4900 2250 50  0001 C CNN
+F 1 "GND" H 4905 2327 50  0000 C CNN
+F 2 "" H 4900 2500 50  0001 C CNN
+F 3 "" H 4900 2500 50  0001 C CNN
+	1    4900 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5DC9C51E
+P 4900 2100
+F 0 "C1" H 5015 2146 50  0000 L CNN
+F 1 "47nF" H 5015 2055 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 4938 1950 50  0001 C CNN
+F 3 "~" H 4900 2100 50  0001 C CNN
+	1    4900 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 5450 2100 4750
+Connection ~ 2100 4750
+Wire Wire Line
+	2100 4750 2000 4750
+$Comp
+L Device:R R4
+U 1 1 5DD6FA46
+P 4500 1850
+F 0 "R4" V 4707 1850 50  0000 C CNN
+F 1 "330K" V 4616 1850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4430 1850 50  0001 C CNN
+F 3 "~" H 4500 1850 50  0001 C CNN
+	1    4500 1850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4350 1850 4250 1850
+Wire Wire Line
+	4650 1850 4900 1850
+Wire Wire Line
+	4900 1950 4900 1850
+Connection ~ 4900 1850
+Wire Wire Line
+	4900 1850 5600 1850
+Wire Wire Line
+	5600 1750 5500 1750
+$Comp
+L power:GND #PWR0101
+U 1 1 5DD5C82E
+P 3950 4750
+F 0 "#PWR0101" H 3950 4500 50  0001 C CNN
+F 1 "GND" H 3955 4577 50  0000 C CNN
+F 2 "" H 3950 4750 50  0001 C CNN
+F 3 "" H 3950 4750 50  0001 C CNN
+	1    3950 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 4650 3950 4750
+Wire Wire Line
+	3950 4650 3700 4650
+Wire Wire Line
+	1950 4250 2750 4250
+Wire Wire Line
+	3700 4050 4200 4050
+Text GLabel 4200 4150 2    50   Input ~ 0
+USB-
+Text GLabel 4200 4250 2    50   Input ~ 0
+USB+
+Wire Wire Line
+	4200 4150 3700 4150
+Wire Wire Line
+	4200 4250 3700 4250
+Text GLabel 1850 2300 2    50   Input ~ 0
+USB-
+Text GLabel 1850 2200 2    50   Input ~ 0
+USB+
+Wire Wire Line
+	1400 2600 1400 2850
+Wire Wire Line
+	1700 2000 2300 2000
+Wire Wire Line
+	1400 2850 2300 2850
+Connection ~ 1400 2850
+Wire Wire Line
+	1400 2850 1400 3000
+Wire Wire Line
+	1850 2200 1700 2200
+Wire Wire Line
+	1850 2300 1700 2300
+$EndSCHEMATC
