@@ -1,0 +1,1 @@
+Als voorbeeld staan er twee "nummers" in deze map. In het echt moeten dat natuurlijk mp3 bestanden zijn. Wel moeten ze op precies deze manier genummerd worden. Vier getallen vanaf 0001, daarna een spatie en dan mag er alles staan wat je zelf maar wil. Ook mogen er geen getallen worden overgeslagen want dan wordt de lijn verbroken als je wel dat nummer probeert te bellen. 
