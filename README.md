@@ -22,4 +22,4 @@ Er is een speciaal printplaatje ontworpen die precies in het doosje past.
 <img src="img/printplaat.png" width="40%" />
 
 # Ik wil er een bouwen
-In het bestand Bouwhandleiding Wonderfoon staat een handleiding van hoe je er een kunt solderen en programmeren. Met de gerberfiles kun je een printplaat bestellen. Let er goed op bij het bestellen dat je controleerd of het midden ook echt een gat wordt voor je de bestelling plaatst.
+In het bestand Bouwhandleiding Wonderfoon staat een handleiding van hoe je er een kunt solderen en programmeren. Met de gerberfiles kun je een printplaat bestellen. Let er goed op bij het bestellen dat je controleert of het midden ook echt een gat wordt voor je de bestelling plaatst.
