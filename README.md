@@ -1,6 +1,8 @@
 # V3 is klaar!
 Omdat ik zelf ook weer plezier kreeg in het project heb ik v3 gemaakt. Helaas (nog) geen DTMF, maar wel betere stabiliteit (minder vaak/nooit fouten met pulsen tellen) en makkelijker om de firmware te updaten (ISCP port). Ook zit er een LED op het board voor debugging (of om te laten zien dat hij aan staat). Er zijn ook weer printplaten, dus bij interesse, stuur even een mailtje naar: floriaan@tutamail.com.
 
+Ik hoop dat het met deze versie gemakkelijker en leuker wordt voor mensen om te experimenteren met de code en het precies zo te maken als je zelf wil.
+
 Heb je nog een oude versie, dan kun je wel de firmware gebruiken van v3 (alleen in wonderfoon.ino moet je OLD_PIN_CONFIG uncommenten), of anders kun je alles van v2 nog terugvinden in de v2 branch.
 
 # Inleiding
