@@ -1,7 +1,8 @@
 #include "Phone.h"
 
-void Phone::setup(int pinPhone) {
+Phone::Phone(int pinPhone, bool debug = false) {
   _pinPhone = pinPhone;
+  _debug = debug;
   _previousTime = millis();
 }
 
@@ -13,31 +14,38 @@ int Phone::readState() {
   _phoneState = NO_CHANGE;
   _lineVoltage = analogRead(_pinPhone);
   
-  if (_lineVoltage <= OFF_HOOK_AVG_THRESHOLD && !_lineLow) {
+  if (_lineVoltage <= OFF_HOOK_THRESHOLD && !_lineLow) {
     _lineLow = true;
     _previousTime = millis();
-  } else if (_lineVoltage > OFF_HOOK_AVG_THRESHOLD && _lineLow) {
-    // on hook or pulse!
+  } 
+  
+  if (_lineVoltage > OFF_HOOK_THRESHOLD && _lineLow) {
     _lineLow = false;
     _previousTime = millis();
-    if (_isDialing ) {
-      // make sure there is sufficient time between two pulses
-      if (_previousTime - _timeOfPreviousPulse > 2) {
-        _pulseCount++;
-        _timeOfPreviousPulse = _previousTime;
-      }
-    }
   }
 
   // calculate the time that the state did not change
   _unchangedTime = millis() - _previousTime;
 
-//  if (_isDialing && _unchangedTime >= 1 && !_lineLow) {
-//    _pulseCount++;
-//  }
+  if (_lineVoltage > OFF_HOOK_THRESHOLD && _isDialing && !_pulseState) {
+    if (millis() - _timeOfPreviousPulse > 50) { 
+      _pulseState = true;
+      _pulseCount++;
+      if (_debug) {
+        digitalWrite(PIN_LED, HIGH);
+      }
+      delay(30);
+      if (_debug) {
+        digitalWrite(PIN_LED, LOW); 
+      }
+    }
+  }
 
+  if (_lineVoltage <= DIALING_THRESHOLD && _pulseState) {
+    _pulseState = false;
+  }
 
-  if (_lineVoltage <= DIALING_AVG_THRESHOLD && !_isDialing) {
+  if (_lineVoltage <= DIALING_THRESHOLD && !_isDialing) {
     _pulseCount = 0;
     _isDialing = true;
     _phoneState = DIALING;

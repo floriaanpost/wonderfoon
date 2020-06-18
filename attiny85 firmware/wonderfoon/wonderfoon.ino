@@ -8,12 +8,26 @@
 #include "DFRobotDFPlayerMini.h"
 #include "Phone.h"
 
+// uncomment this if you have an old version
+// #define OLD_PIN_CONFIG
+
+// debug on or off
+#define DEBUG true
+
 // pin config on attiny85
+#define PIN_LED 0
+#define PIN_PHONE A3
+#define PIN_BUSY 4
+#define TX 2
+#define RX 1
+
+#ifdef OLD_PIN_CONFIG
 #define PIN_LED 0
 #define PIN_PHONE A1
 #define PIN_BUSY 1
 #define TX 3
 #define RX 4
+#endif
 
 // dial done when no new numbers detected after this timeout
 #define LONG_TIMEOUT 2500
@@ -29,9 +43,6 @@
 #define ERROR_FILE_COUNT 2
 #define ERROR_SERVICE_FILE_COUNT 3
 
-// debug on or off (1 is on, 0 is off)
-#define DEBUG 0
-
 int songCount;
 int phoneState;
 int playerState;
@@ -42,9 +53,9 @@ bool isPlayingSong = false;
 bool isWaitingForHook = false;
 
 
-SoftwareSerial Serial(RX, TX);
+SoftwareSerial mp3Serial(RX, TX);
 DFRobotDFPlayerMini mp3Player;
-Phone phone;
+Phone phone(PIN_PHONE, DEBUG);
 
 void(* resetFunc) (void) = 0; //declare reset function @ address 0
 
@@ -91,11 +102,11 @@ void numberCalled(String number) {
 void setup() {
   pinMode(PIN_LED, OUTPUT);
   pinMode(PIN_BUSY, INPUT);
-  Serial.begin(9600);
+  mp3Serial.begin(9600);
   
   // give the dfplayer some time to start up, if still failed to start up, give error code and try again
   delay(700);
-  if (!mp3Player.begin(Serial)) {
+  if (!mp3Player.begin(mp3Serial)) {
     error(ERROR_DFPLAYER_INIT);
   }
   delay(200);
@@ -132,12 +143,12 @@ void setup() {
   // use only the files in the mp3 folder
   songCount = totFileCount - serviceFileCount;
 
-  // setup the phone
-  phone.setup(PIN_PHONE);
+//  mp3Player.playMp3Folder(3);
 
 }
 
 void loop() {
+  
   phoneState = phone.readState();
   
   if (phoneState == NUMBER_DIALED && !isPlayingSong && !isWaitingForHook) {

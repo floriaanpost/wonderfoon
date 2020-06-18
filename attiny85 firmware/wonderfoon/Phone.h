@@ -9,14 +9,16 @@
 #define DIALING 3
 #define NUMBER_DIALED 4
 
-#define OFF_HOOK_AVG_THRESHOLD 461
-#define DIALING_AVG_THRESHOLD 217
+#define PIN_LED 0
+
+#define OFF_HOOK_THRESHOLD 450
+#define DIALING_THRESHOLD 130
 
 #define TIMEOUT 150
 
 class Phone {
   public:
-    void setup(int pinPhone);
+    Phone(int pinPhone, bool debug = false);
     int readState();
     char getNumber();
     
@@ -31,7 +33,9 @@ class Phone {
     bool _lineLow = false;
     bool _isOnHook = true;
     bool _isDialing = false;
+    bool _pulseState = false;
     int _pulseCount = 0;
+    bool _debug = false;
     
 };
 
