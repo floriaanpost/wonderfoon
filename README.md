@@ -5,6 +5,8 @@ Ik hoop dat het met deze versie gemakkelijker en leuker wordt voor mensen om te 
 
 Heb je nog een oude versie, dan kun je wel de firmware gebruiken van v3 (alleen in wonderfoon.ino moet je OLD_PIN_CONFIG uncommenten), of anders kun je alles van v2 nog terugvinden in de v2 branch.
 
+Verder valt het mij op dat mensen het lastig vinden om de Attiny te programmeren. Mocht dit je tegenhouden dan kan ik eventueel ook voorgeprogrammeerde chips opsturen, en vaak heb ik ook nog wel andere onderdelen liggen, en als je heel graag een wonderfoon wil, maar je kunt niet solderen, dan wil ik er misschien zelfs wel een voor je in elkaar solderen. Vraag even naar de mogelijkheden op de mail :)
+
 # Wonderfoon mini
 De Wonderfoon is een ouderwetse draaischijftelefoon waar je muziek te horen krijgt door de hoorn als je een nummer draait. Het is oorspronkelijk bedacht als "speelgoed" voor (demente) ouderen door Leo Willems. De ouderwetse telefoon uit hun jonge jaren, gecombineerd met muziek uit dezelfde tijd is vaak en leuke ervaring voor ouderen. Het oorspronkelijke idee is gemaakt met een Raspberry Pi (een soort kleine computer). Voor het oorspronkelijke plan moet de telefoon (onherstelbaar) gesloopt worden. Met inspiratie van [een project van Jan Derogee (TeleJukebox)](https://github.com/JanDerogee/TeleJukebox) heb ik een nieuw type Wonderfoon ontworpen. Hierbij hoeft de telefoon niet gesloopt te worden en kun je de stekker van de telefoon gemakkelijk in een doosje stoppen dat zich gedraagt als de telefooncentrale. Ook is de Raspberry Pi vervangen door een kleine mp3 speler (DFPlayer Mini) en een microcontroller (ATTiny85).
 
