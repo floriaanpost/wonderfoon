@@ -111,7 +111,7 @@ void setup() {
   }
   delay(200);
 
-  mp3Player.volume(25);  //Set volume value. From 0 to 30
+  mp3Player.volume(30);  //Set volume value. From 0 to 30
 
 
   // find the file count -> if fail, give error code, restart and try again
