@@ -27,13 +27,15 @@ In het bestand Bouwhandleiding Wonderfoon staat een handleiding van hoe je er ee
 # Componentenlijst
 Ik kreeg de vraag waar je de componenten kunt kopen. Hieronder de lijst met componenten. Dit is zonder enige twijfel niet de goedkoopste optie, maar het kan je in ieder geval helpen met de juiste componenten vinden:
 
-Attiny85: https://opencircuit.nl/Product/ATtiny85-DIP8
-DFPlayer mini: https://opencircuit.nl/Product/DFPlayer-Een-mini-mp3-speler-voor-Arduino
+- Attiny85: https://opencircuit.nl/Product/ATtiny85-DIP8
+- DFPlayer mini: https://opencircuit.nl/Product/DFPlayer-Een-mini-mp3-speler-voor-Arduino
+
 Header pins (ICSP): https://opencircuit.nl/Product/Male-header-2x40-2.54mm-zwart
-USB type B connector: https://www.conrad.nl/p/econ-connect-usbbu1bn-usb-connector-bus-inbouw-horizontaal-wit-1-stuks-1883654
-10 uF elco: https://opencircuit.nl/Product/10uF-35V-Condensator-elektrolytisch
-1 uF elco: https://opencircuit.nl/Product/1uF-450V-Condensator-elektrolytisch
-LED (optioneel): https://opencircuit.nl/Product/Rood-5mm-diffuse-LED-10-stuks
-10kOhm weerstand: https://opencircuit.nl/Product/10K%CE%A9-Metaalfilm-weerstand-1-4W-10-stuks
-220Ohm weerstand: https://opencircuit.nl/Product/220%CE%A9-Metaalfilm-weerstand-1-4W-10-stuks
-2.7 kOhm (dit is 2kOhm, maar dat is ook wel prima): https://opencircuit.nl/Product/2K%CE%A9-Metaalfilm-weerstand-1-4W-10-stuks
+
+* USB type B connector: https://www.conrad.nl/p/econ-connect-usbbu1bn-usb-connector-bus-inbouw-horizontaal-wit-1-stuks-1883654
+* 10 uF elco: https://opencircuit.nl/Product/10uF-35V-Condensator-elektrolytisch
+* 1 uF elco: https://opencircuit.nl/Product/1uF-450V-Condensator-elektrolytisch
+* LED (optioneel): https://opencircuit.nl/Product/Rood-5mm-diffuse-LED-10-stuks
+* 10kOhm weerstand: https://opencircuit.nl/Product/10K%CE%A9-Metaalfilm-weerstand-1-4W-10-stuks
+* 220Ohm weerstand: https://opencircuit.nl/Product/220%CE%A9-Metaalfilm-weerstand-1-4W-10-stuks
+* 2.7 kOhm (dit is 2kOhm, maar dat is ook wel prima): https://opencircuit.nl/Product/2K%CE%A9-Metaalfilm-weerstand-1-4W-10-stuks
