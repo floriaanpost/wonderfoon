@@ -34,6 +34,6 @@ Ik kreeg de vraag waar je de componenten kunt kopen. Hieronder de lijst met comp
 - 10 uF elco: https://opencircuit.nl/Product/10uF-35V-Condensator-elektrolytisch
 - 1 uF elco: https://opencircuit.nl/Product/1uF-450V-Condensator-elektrolytisch
 - LED (optioneel): https://opencircuit.nl/Product/Rood-5mm-diffuse-LED-10-stuks
-- 10kOhm weerstand: https://opencircuit.nl/Product/10K%CE%A9-Metaalfilm-weerstand-1-4W-10-stuks
-- 220Ohm weerstand: https://opencircuit.nl/Product/220%CE%A9-Metaalfilm-weerstand-1-4W-10-stuks
+- 10 kOhm weerstand: https://opencircuit.nl/Product/10K%CE%A9-Metaalfilm-weerstand-1-4W-10-stuks
+- 220 Ohm weerstand: https://opencircuit.nl/Product/220%CE%A9-Metaalfilm-weerstand-1-4W-10-stuks
 - 2.7 kOhm (dit is 2kOhm, maar dat is ook wel prima): https://opencircuit.nl/Product/2K%CE%A9-Metaalfilm-weerstand-1-4W-10-stuks
