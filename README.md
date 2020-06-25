@@ -25,7 +25,7 @@ Er is een speciaal printplaatje ontworpen die precies in het doosje past.
 In het bestand Bouwhandleiding Wonderfoon staat een handleiding van hoe je er een kunt solderen en programmeren. Met de gerberfiles kun je een printplaat bestellen. Let er goed op bij het bestellen dat je controleert of het midden ook echt een gat wordt voor je de bestelling plaatst. Ik heb ook nog behoorlijk wat printplaatjes liggen, dus je kunt ze ook bij mij bestellen.
 
 # Componentenlijst
-Ik kreeg de vraag waar je de componenten kunt kopen. Hieronder de lijst met componenten. Dit is zonder enige twijfel niet de goedkoopste optie, maar het kan je in ieder geval helpen met de juiste componenten vinden:
+Ik kreeg de vraag waar je de componenten kunt kopen. Hieronder een voorbeeld. Dit is zonder enige twijfel niet de goedkoopste optie, maar het kan je in ieder geval helpen met de juiste componenten vinden:
 
 - Attiny85: https://opencircuit.nl/Product/ATtiny85-DIP8
 - DFPlayer mini: https://opencircuit.nl/Product/DFPlayer-Een-mini-mp3-speler-voor-Arduino
