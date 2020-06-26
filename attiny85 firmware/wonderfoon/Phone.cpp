@@ -1,6 +1,6 @@
 #include "Phone.h"
 
-Phone::Phone(int pinPhone, bool debug = false) {
+Phone::Phone(int pinPhone, bool debug) {
   _pinPhone = pinPhone;
   _debug = debug;
   _previousTime = millis();
