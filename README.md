@@ -45,3 +45,38 @@ Ik kreeg de vraag waar je de componenten kunt kopen. Hieronder een voorbeeld. Di
 # De liedjes nummeren is veel moeite...
 Hier heeft Daan een python scriptje voor gemaakt dat je kunt gebruiken:
 https://github.com/daanv98/mp3nu
+
+# FAQ
+Ik krijg vaak soortgelijke vragen die ik hieronder zal beantwoorden:
+
+#### Hoe moet ik de bestanden op de SD kaart zetten (lees dit sowieso even door, dit zorgt voor het meest problemen)
+De DFplayer mini is een handig en goedkoop stukje hardware, maar heeft een paar vreemde eigenschappen, waar je rekening mee moet houden als je bestanden op de SD kaart zet. Met de onderstaande stappen gaat het (bij mij althans) altijd goed:
+
+- Formatteer de SD kaart (FAT)
+- Zet eerst de 01/ map erop (https://github.com/floriaanpost/wonderfoon/tree/master/muziek). Dit mapje bevat de kiestoon die je hoort als je de hoorn van de haak neemt en de verbinding verbroken toon en nog wat zaken. Het is van cruciaal belang dat je dit eerst doet voor dat je iets met een MP3 map doet. Dit komt omdat de DFPlayer mini de nummering doet op basis van de volgorde waarop de liedjes op de SD kaart zijn gezet, dus die moeten als aller eerst op de SD kaart worden gezet.
+- Maak hierna een mapje genaamd MP3 in de hoofdmap. Zet hierin liedjes op volgorde genummerd, startend met precies 4 cijfers. Alleen de eerste vier cijfers maken uit, daarna kun je alles schrijven wat je wil. Dit nummeren is veel werk, dus daarvoor kun je eventueel het Python scriptje van Daan gebruiken (zie hierboven), of zelf een bash-kunstwerktje maken, of gewoon handmatig te werk gaan. Let op dat er geen gaten zitten in de nummering! Zie als voorbeeld: https://github.com/floriaanpost/wonderfoon/tree/master/muziek/MP3
+- Laat hierna de 01 map voor altijd met rust, je kunt wel dingen aanpassen in de MP3 map, maar let op dat er geen verborgen bestanden ontstaan op de SD kaart, die ziet de DFPlayer mini niet als verborgen bestanden, en dat kan zorgen voor vreemde problemen.
+
+Als je een mac hebt (ik ben zelf zo'n persoon) heb je een beetje een probleem. Mac is heel gretig in het produceren van verborgen bestanden en hele trash mappen op sd kaarten. Het is mij maar zelden gelukt om het daar goed te doen. Ik pak nu altijd mijn Linux laptop, wat verreweg het beste gaat op dit gebied. Windows zorgt ook voor weinig problemen.
+
+#### Ik heb de bestanden precies zoals hierboven op mijn SD kaart gezet, en toch werkt het niet.
+Ik heb iemand gehad die SD kaartjes had gekocht die ook ik niet aan de praat heb gekregen. We hebben nog steeds geen idee wat het probleem was. Ik heb vaak de allergoedkoopste Kingston SD kaart gebruikt die ik kon vinden en daar nog nooit problemen mee gehad. Geen idee dus wat dit precies kan zijn, maar een andere SD kaart proberen is geen slecht idee.
+
+#### Ik denk dat mijn ATtiny85 niet goed is geprogrammeerd
+Als de led op enig moment knippert, betekent dat hoogstwaarschijnlijk dat de ATtiny85 goed is geprogrammeerd, aangezien die de LED aanstuurt, als de LED dus knippert, zoek dan naar een andere oorzaak dan de ATtiny85. Doet de LED helemaal niets, dan is er een goede kans dat de ATtiny85 inderdaad niet goed is geprogrammeerd. 
+
+#### De LED blijft knipperen, en de wonderfoon werkt niet
+Zo lang de led knippert is de ATtiny85 bezig met verbinding maken met de kleine MP3 speler, de DFPLayer mini. Dit gaat zelden meteen goed zodra je hem in het stopcontact steekt, de DFPlayer heeft wat meer tijd nodig om op te starten dan de ATtiny85. Als het knipperen echter niet stopt, dan gaat er iets mis. Dit kan betekenen dat er geen SD kaart in de DFPlayer zit (maar ik ga ervan uit dat jullie dat niet vergeten), of dat er iets is waardoor de bestanden op de SD kaart niet goed gelezen kunnen worden, zie het eerste punt over hoe je bestanden op de SD kaart moet zetten, en het tweede punt over sommige SD kaarten die niet werken.
+
+#### Ik hoor bijvoorbeeld de "verkeerd verbonden" toon als ik de hoorn opneem in plaats van de kiestoon, of meteen een liedje
+Zet de liedjes juist op de SD kaart, zoals beschreven in het eerste punt. Als je een mac hebt, probeer een windows/linux computer te vinden en probeer het daarmee, of zoek uit hoe het wel lukt op een mac en vertel het mij ;)
+
+#### Ik wil de ATtiny85 programmeren met een Arduino, maar het lukt me niet
+Een USBasp is veel makkelijker om te programmeren, en heel goedkoop, maar als je het toch met een arduino wil doen kun je deze handleiding volgen:
+https://create.arduino.cc/projecthub/arjun/programming-attiny85-with-arduino-uno-afb829
+Er is alleen een ding dat hier niet vermeld staat en dat is dat wanneer je de "ArduinoISP" sketch op de arduino zet je regel 81 moet uncommenten (// #define USE_OLD_STYLE_WIRING). Verder is gebruik ik een kloksnelheid van 1MHz voor de attiny (hoewel hoger ook zou moeten werken).
+
+#### De sketch compileert niet bij het programmeren. 
+Je moet de attiny eerst toevoegen aan de arduino IDE.
+Volg de instructies van deze repository: https://github.com/damellis/attiny 
+
