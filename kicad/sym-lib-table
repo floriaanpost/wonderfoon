@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name dfplayer_mini)(type Legacy)(uri ${KIPRJMOD}/dfplayer_mini.lib)(options "")(descr ""))
+  (lib (name printplaat-rescue)(type Legacy)(uri ${KIPRJMOD}/printplaat-rescue.lib)(options "")(descr ""))
 )
