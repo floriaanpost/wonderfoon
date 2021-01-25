@@ -43,6 +43,7 @@ Ik kreeg de vraag waar je de componenten kunt kopen. Hieronder een voorbeeld. Di
 - 10 kOhm weerstand: https://opencircuit.nl/Product/10K%CE%A9-Metaalfilm-weerstand-1-4W-10-stuks
 - 220 Ohm weerstand: https://opencircuit.nl/Product/220%CE%A9-Metaalfilm-weerstand-1-4W-10-stuks
 - 2.7 kOhm (dit is 2kOhm, maar dat is ook wel prima): https://opencircuit.nl/Product/2K%CE%A9-Metaalfilm-weerstand-1-4W-10-stuks
+- Telefooncontactdoos https://www.gamma.nl/assortiment/q-link-telefoon-contactdoos-opbouw-modulair-4-polig-wit/p/B547149
 
 # De liedjes nummeren is veel moeite...
 Hier heeft Daan een python scriptje voor gemaakt dat je kunt gebruiken:
