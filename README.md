@@ -49,6 +49,9 @@ Ik kreeg de vraag waar je de componenten kunt kopen. Hieronder een voorbeeld. Di
 Hier heeft Daan een python scriptje voor gemaakt dat je kunt gebruiken:
 https://github.com/daanv98/mp3nu
 
+Je kunt ook file renamer gebruiken:
+http://www.sherrodcomputers.com/products_filerenamer.cfm
+
 # FAQ
 Ik krijg vaak soortgelijke vragen die ik hieronder zal beantwoorden:
 
